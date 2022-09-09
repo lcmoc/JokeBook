@@ -6,13 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="aa50b107-b842-41ed-8eb2-e55fb0bb92f8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/jokebook/controller/Greeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/jokebook/model/Greeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/jokebook/controller/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/jokebook/controller/GreetingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/jokebook/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/jokebook/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbw/jokebook/controller/Greeting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbw/jokebook/controller/GreetingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbw/jokebook/controller/GreetingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/jokebook/model/Joke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/jokebook/model/Joke.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ch/bbw/jokebook/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbw/jokebook/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbw/jokebook/model/Joke.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbw/jokebook/model/Joke.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +37,7 @@
     <option name="myId2Visible">
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
@@ -61,6 +58,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -102,7 +100,7 @@
       <workItem from="1662616150725" duration="10000" />
       <workItem from="1662638728908" duration="1860000" />
       <workItem from="1662640753333" duration="2628000" />
-      <workItem from="1662704728318" duration="7873000" />
+      <workItem from="1662704728318" duration="10750000" />
     </task>
     <servers />
   </component>

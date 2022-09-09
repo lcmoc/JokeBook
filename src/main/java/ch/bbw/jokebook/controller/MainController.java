@@ -2,7 +2,6 @@ package ch.bbw.jokebook.controller;
 
 import ch.bbw.jokebook.model.Joke;
 import ch.bbw.jokebook.service.JokeRepository;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -12,8 +11,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import ch.bbw.jokebook.service.DatabaseService;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
-import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -59,4 +59,17 @@ public class MainController {
 			return ResponseEntity.notFound().build();
 		 }
 	}
+
+	@PostMapping("/jokes")
+	public ResponseEntity<Joke>
+	addJoke(@RequestBody Joke joke) {
+		System.out.println("Joke created");
+
+		// jokeRepository.save(joke); not working yet
+		return ResponseEntity
+				.status(HttpStatus.CREATED)  // HTTP 201
+				.contentType(MediaType.APPLICATION_JSON)
+				.body(joke);
+	}
 }
+

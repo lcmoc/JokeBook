@@ -1,4 +1,4 @@
-package ch.bbw.jokebook.controller;
+package ch.bbw.jokebook.model;
 
 public class Greeting {
     private String message = "Hello World";

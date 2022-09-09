@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa50b107-b842-41ed-8eb2-e55fb0bb92f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/jokebook/controller/Greeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/jokebook/model/Greeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/jokebook/controller/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/jokebook/controller/GreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/jokebook/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/jokebook/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbw/jokebook/controller/Greeting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbw/jokebook/controller/GreetingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbw/jokebook/controller/GreetingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbw/jokebook/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbw/jokebook/controller/MainController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +76,9 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ch.bbw.jokebook.controller" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="JpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -94,7 +102,7 @@
       <workItem from="1662616150725" duration="10000" />
       <workItem from="1662638728908" duration="1860000" />
       <workItem from="1662640753333" duration="2628000" />
-      <workItem from="1662704728318" duration="4293000" />
+      <workItem from="1662704728318" duration="7873000" />
     </task>
     <servers />
   </component>

@@ -8,18 +8,14 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.*;
 import ch.bbw.jokebook.service.DatabaseService;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.Optional;
 
 @Controller
 public class MainController {
 	private final JokeRepository jokeRepository;
-
 	private final DatabaseService databaseService;
 
 	@Autowired
@@ -65,11 +61,25 @@ public class MainController {
 	addJoke(@RequestBody Joke joke) {
 		System.out.println("Joke created");
 
-		// jokeRepository.save(joke); not working yet
+		jokeRepository.save(joke);
 		return ResponseEntity
 				.status(HttpStatus.CREATED)  // HTTP 201
 				.contentType(MediaType.APPLICATION_JSON)
 				.body(joke);
+	}
+
+	@DeleteMapping("/jokes/{id}")
+	public ResponseEntity<?>
+	deleteJoke(@PathVariable long id) {
+		Optional<Joke> joke = jokeRepository.findById(id);
+
+		if (joke.isPresent()) {
+			System.out.println("removed Joke");
+			//jokeRepository.delete(joke); not working yet
+			return ResponseEntity.noContent().build();  // HTTP 204
+		} else {
+			return ResponseEntity.notFound().build();   // HTTP 404
+		}
 	}
 }
 

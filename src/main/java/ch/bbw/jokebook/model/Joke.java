@@ -18,6 +18,7 @@ public class Joke {
 	private int rating;
 	@Temporal(TemporalType.DATE)
 	private Date date;
+	private int section_idfs;
 
 	public long getId() {
 		return id;
@@ -43,6 +44,12 @@ public class Joke {
 	public void setDate(Date date) {
 		this.date = date;
 	}
-	
 
+	public int getSection_idfs() {
+		return section_idfs;
+	}
+
+	public void setSection_idfs(int section_idfs) {
+		this.section_idfs = section_idfs;
+	}
 }

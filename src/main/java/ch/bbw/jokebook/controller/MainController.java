@@ -75,11 +75,22 @@ public class MainController {
 
 		if (joke.isPresent()) {
 			System.out.println("removed Joke");
-			//jokeRepository.delete(joke); not working yet
+			jokeRepository.delete(joke.get());
 			return ResponseEntity.noContent().build();  // HTTP 204
 		} else {
 			return ResponseEntity.notFound().build();   // HTTP 404
 		}
 	}
+
+	@PutMapping("/jokes/{id}")
+	public ResponseEntity<Joke>
+	updateJoke(@RequestBody Joke joke) {
+
+		jokeRepository.save(joke);
+		return ResponseEntity.status(HttpStatus.CREATED)  // HTTP 201
+				.contentType(MediaType.APPLICATION_JSON)
+				.body(joke);
+	}
+
 }
 
